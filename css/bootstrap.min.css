@@ -8343,6 +8343,10 @@ fieldset:disabled .btn {
     background-color: #fe7e09 !important
 }
 
+.bg-primaryF {
+    background-color: #fff !important
+}
+
 .bg-secondary {
     background-color: #34AD54 !important
 }
