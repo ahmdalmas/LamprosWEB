@@ -313,12 +313,20 @@ h6,
 /*** Service ***/
 .service-item {
     position: relative;
-    height: 300px;
+    height: auto;
     padding: 0 30px;
     transition: .5s;
 }
 
-.service-item .service-icon {
+.service-item2 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    padding: 0 30px;
+    transition: .5s;
+}
+
+.service-item .service-item2 .service-icon {
     margin-bottom: 30px;
     width: 60px;
     height: 60px;
@@ -330,11 +338,19 @@ h6,
     transform: rotate(-45deg);
 }
 
-.service-item .service-icon i {
+.service-item .service-item2 .service-icon i {
     transform: rotate(45deg);
 }
 
 .service-item a.btn {
+    position: absolute;
+    width: 60px;
+    bottom: -48px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+}
+.service-item2 a.btn {
     position: absolute;
     width: 60px;
     bottom: -48px;
@@ -347,6 +363,12 @@ h6,
     bottom: -24px;
     opacity: 1;
 }
+
+.service-item2:hover a.btn {
+    bottom: -24px;
+    opacity: 1;
+}
+
 
 
 /*** Testimonial ***/
@@ -504,3 +526,42 @@ h6,
         height: auto;
     }
 }
+
+
+
+
+
+
+/* CUSTOM============================================================== */
+
+.container-bl {
+    position: relative;
+  }
+  
+  .image-wrapper-bl {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay-bl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-wrapper-bl:hover .overlay-bl {
+    opacity: 1;
+  }
+  
+  .text-bl {
+    color: white;
+    font-size: 20px;
+  }
